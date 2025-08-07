@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Beautiful Greeting Card</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.2);
+      padding: 40px 60px;
+      text-align: center;
+      max-width: 400px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 40px 0 rgba(60, 60, 60, 0.25);
+    }
+    .card h1 {
+      color: #43c6ac;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .card p {
+      color: #555;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .flower {
+      font-size: 2em;
+      margin-bottom: 20px;
+      animation: bloom 2s infinite alternate;
+    }
+    @keyframes bloom {
+      0% { transform: scale(1);}
+      100% { transform: scale(1.1);}
+    }
+    .signature {
+      color: #888;
+      font-style: italic;
+      margin-top: 20px;
+      font-size: 1em;
+    }
+  </style>
 </head>
 <body>
-    
-</body>
-</html>
+  <div class="card">
+    <div class="flower">🌸🌼🌷</div>
+    <h1>Warmest Wishes!</h1>
+    <p>
+      May your day be filled with joy, laughter, and beautiful moments.<br>
+      Sending you lots of love and happiness!
+    </p>
+    <div class="signature">
+      — From Your Friend
